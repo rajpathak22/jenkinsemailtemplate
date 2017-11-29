@@ -2,7 +2,7 @@ def jenkinspull(url,pictureName,x1,y1,x2,y2):
     import time
     from selenium import webdriver
     from PIL import Image
-    driver = webdriver.PhantomJS('C:/Users/rajpathak/Desktop/Jenkins/PYTHONSCRIPT/phantomjs.exe')
+    driver = webdriver.PhantomJS('./phantomjs.exe')
     driver.set_window_size(1368,768 ) # set the window size that you need 
     driver.get(url)
     #wait for Javascript to load
